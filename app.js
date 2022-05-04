@@ -9,9 +9,14 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
-app.get('/pares', (req, res) => {
+app.get('/operations-pares', (req, res) => {
   const {numero} = req.body;
   res.send(operation.pares(numero));
+})
+
+app.get('/operations-primos', (req, res) => {
+  const {numero} = req.body;
+  res.send(operation.primo(numero));
 })
 
 app.listen(port, () => {
