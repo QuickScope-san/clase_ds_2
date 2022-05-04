@@ -17,6 +17,17 @@ let pares = (x) => {
     return resp;
  }
 
+ let primo = (x) => {
+    var i;
+    for(i = 2; i< x;i++){
+        if(x % i == 0){
+            return  x + " is not prime";
+           
+        }
+    }
+    return x + " is prime";
+ }
+
 module.exports={
-    pares,
+    pares, primo
 }
