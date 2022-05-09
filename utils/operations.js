@@ -22,6 +22,7 @@
  let coseno=(x)=>{
     var fun = paresParaCoseno(x)
     var array = []
+    
     for (x=0; x<fun.length; x++){
         array.push(Math.cos(fun[x]*(Math.PI/180)));
     }
