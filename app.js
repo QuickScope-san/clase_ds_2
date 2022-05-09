@@ -19,7 +19,7 @@ app.get('/taylorexp', (req, res) => {
   const grado =  req.body.grado;
   const valores = taylorExp.serie(grado).array;
   res.status(200);
-  res.json( { array  : valores} );
+  res.json( { array : valores} );
 });
 
 app.get('*',(req,res)=>{
