@@ -17,6 +17,24 @@ let pares = (x) => {
     return resp;
  }
 
+let fibonacci = n => {
+
+    let fibonacciNumbers = [];
+
+    for (let i = 1; i <= n; i++) {
+        if(i == 1 || i == 2  ){
+            fibonacciNumbers.push(1);
+        }
+        else{
+        myFibonacci = fibonacciNumbers[i-2] + fibonacciNumbers[i-3]
+        fibonacciNumbers.push( myFibonacci );
+        }      
+    }
+    return fibonacciNumbers; 
+    
+}
+
 module.exports={
     pares,
+    fibonacci,
 }

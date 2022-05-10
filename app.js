@@ -14,6 +14,11 @@ app.get('/pares', (req, res) => {
   res.send(operation.pares(numero));
 })
 
+app.get('/fibonacci', (req, res) => {
+  const {numero} = req.body;
+  res.send(operation.fibonacci(numero));
+})
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
