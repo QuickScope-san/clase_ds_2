@@ -14,6 +14,11 @@ app.get('/pares', (req, res) => {
   res.send(operation.pares(numero));
 })
 
+app.get('/raiz_impar', (req, res) => {
+  const {numero} = req.body;
+  res.send(operation.raiz_impar(numero));
+})
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
