@@ -17,6 +17,12 @@ let pares = (x) => {
     return resp;
  }
 
+ function sumatoria(n) {
+     n = parseInt (n);
+     let resp = "La sumatoria es: " + n*(n+1)/2;
+    return resp;
+   }
+
 module.exports={
-    pares,
+    pares, sumatoria
 }
