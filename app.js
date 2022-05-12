@@ -14,6 +14,11 @@ app.get('/pares', (req, res) => {
   res.send(operation.pares(numero));
 })
 
+app.get('/sumatoria/:numero', (req, res) => {
+  const {numero} = req.params;
+  res.send(operation.sumatoria(numero).toString());
+})
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
